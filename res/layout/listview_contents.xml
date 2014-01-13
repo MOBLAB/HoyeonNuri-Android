@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/listview_contents_outline"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/listview_focus" >
+
+        <RelativeLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            >
+            <RelativeLayout
+                android:id="@+id/listview_contents_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip" android:layout_alignParentLeft="true" android:layout_marginRight="20dip">
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="5dip">
+
+                    <ImageView
+                        android:id="@+id/board_notice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/board_notice" android:layout_centerInParent="true" android:visibility="invisible"/>
+
+                    <TextView
+                        android:id="@+id/listview_contents_boardno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/listview_contents_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="30dip"
+                    android:layout_marginTop="5dip"
+                    android:singleLine="true"
+                    android:text="TextView"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/listview_contents_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="5dip"
+                    android:text="()"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/listview_contents_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="5dip"
+                    android:text="TextView"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/listview_contents_writer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_toLeftOf="@id/listview_contents_date"
+                    android:text="TextView"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_height="60dip" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/board_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/next" android:layout_centerInParent="true"/>
+
+                <ImageView
+                    android:id="@+id/board_secretkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginRight="5dip"
+                    android:src="@drawable/board_secret"
+                    android:visibility="invisible" android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>

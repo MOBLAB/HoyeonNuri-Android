@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:layout_height="40dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip" 
+        android:gravity="center"
+        android:onClick="Ready_onClick" android:background="@drawable/listrowbg_default">
+
+	    <ProgressBar
+	        android:id="@+id/list_ready"
+	        android:layout_width="30dip"
+	        android:layout_height="30dip"
+	        android:layout_centerInParent="true"
+	         />
+    </RelativeLayout>
+    	
+</LinearLayout>

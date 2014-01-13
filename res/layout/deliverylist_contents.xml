@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/deliverylist_contents_outline"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/navi_effect" >
+
+    <RelativeLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="80dip" >
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dip"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="20dip"
+                android:gravity="center_vertical" >
+
+            <ImageView
+                    android:id="@+id/deliverylist_banner"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/delivery_banner" />
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                <TextView
+                        android:id="@+id/deliverylist_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="비어파크"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp" >
+
+                    <TextView
+                            android:id="@+id/deliverylist_call"
+                            android:layout_width="120dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/delivery_call"
+                            android:gravity="center"
+                            android:text="044-111-1111"
+                            android:textColor="#FFFFFFFF" />
+
+                    <TextView
+                            android:id="@+id/deliverylist_ispossible"
+                            android:layout_width="80dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/delivery_ispossible"
+                            android:gravity="center"
+                            android:text="배달가능"
+                            android:textColor="#FFFFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="80dip"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="left" >
+
+            <ImageView
+                    android:id="@+id/delivery_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/next" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

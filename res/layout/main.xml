@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/main_bg_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/main_bg" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/main_menu3"
+            android:layout_width="75dp"
+            android:layout_height="165dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="17dp"
+            android:layout_marginLeft="180dp"
+            android:src="@drawable/main_menu3_effect" />
+
+        <ImageView
+            android:id="@+id/main_menu4"
+            android:layout_width="65dp"
+            android:layout_height="165dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="245dp"
+            android:src="@drawable/main_menu4_effect" />
+
+        <ImageView
+            android:id="@+id/main_menu2"
+            android:layout_width="90dp"
+            android:layout_height="165dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="106dp"
+            android:src="@drawable/main_menu2_effect" />
+
+        <ImageView
+            android:id="@+id/main_menu1"
+            android:layout_width="134dp"
+            android:layout_height="134dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="60dp"
+            android:src="@drawable/main_menu1_effect" />
+
+        <ScrollView
+            android:id="@+id/main_notice_scroll"
+            android:layout_width="250dp"
+            android:layout_height="180dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="45dp"
+            android:scrollbarDefaultDelayBeforeFade="500000" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/main_notice_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="TextView" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/main_moblogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/mobwhitemini" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/main_moblogo"
+            android:text="Made by  "
+            android:textColor="#FFFFFFFF" />
+    </RelativeLayout>
+
+</RelativeLayout>

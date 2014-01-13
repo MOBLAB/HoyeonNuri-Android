@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="HandlerLeak" severity="ignore" />
+    <issue id="NewApi" severity="ignore" />
+    <issue id="UseSparseArrays" severity="ignore">
+        <ignore path="src/com/proinlab/hoyeonnuri/parser/LibraryParser.java" />
+    </issue>
+    <issue id="ValidFragment">
+        <ignore path="src/proinfactory/com/hoyeonnuri/FragmentBoard.java" />
+    </issue>
+</lint>

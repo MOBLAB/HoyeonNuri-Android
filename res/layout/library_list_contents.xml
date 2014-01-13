@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/listview_contents_outline"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/listview_focus" >
+
+    <RelativeLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+        <LinearLayout
+                android:id="@+id/listview_contents_title_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFD8C9B2"
+                >
+
+            <TextView
+                    android:id="@+id/listview_contents_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textSize="18sp"
+                    android:layout_margin="5dip"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" android:layout_below="@id/listview_contents_title_layout">
+
+            <RelativeLayout
+                    android:id="@+id/listview_contents_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_marginBottom="10dip">
+
+                <TextView
+                        android:id="@+id/listview_contents_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="5dip"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:text="TextView"
+                        android:textSize="15sp" />
+
+                <TextView
+                        android:id="@+id/listview_contents_using"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/listview_contents_all"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="5dip"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:text="TextView"
+                        android:textSize="15sp" />
+
+                <TextView
+                        android:id="@+id/listview_contents_rest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/listview_contents_using"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginLeft="50dip"
+                        android:layout_toRightOf="@+id/listview_contents_using"
+                        android:text="TextView"
+                        android:textSize="15sp" />
+
+                <TextView
+                        android:id="@+id/listview_contents_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/listview_contents_using"
+                        android:layout_alignLeft="@+id/listview_contents_rest"
+                        android:text="TextView"
+                        android:textSize="15sp" />
+
+                <ImageView
+                        android:id="@+id/board_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/next" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

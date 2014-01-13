@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/moblogo" />
+
+        <TextView
+            android:id="@+id/dev_appinfotext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:text="[호연누리]는\n호연학사 홈페이지 게시물 및 식단,\n각종 기숙사정보를 사생들이 쉽게 볼 수 있도록\nMOB 에서 만들었습니다.\n*호연학사 생활지원팀 및 사생회와 관련 없습니다."
+            android:textColor="#FF000000" />
+
+        <TextView
+            android:id="@+id/devinfotext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:text="개발자\n이승준(iOS) : enginie@enginie.com\n채영훈(Android) : proin@korea.ac.kr\n이서희(Design) : lisya@naver.com\n권민정(Design) : kwminn.n@gmail.com\n"
+            android:textColor="#FF000000" />
+    </LinearLayout>
+
+</LinearLayout>

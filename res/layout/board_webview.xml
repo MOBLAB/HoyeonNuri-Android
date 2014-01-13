@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/webview_subbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="#FFD8C9B2">
+
+        <TextView
+                android:id="@+id/subbar_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" android:layout_alignParentRight="true" android:layout_marginRight="3dip"/>
+        <TextView
+                android:id="@+id/subbar_writer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_alignParentTop="true" android:layout_toLeftOf="@+id/subbar_date"
+                android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <ProgressBar
+            android:id="@+id/webviewctrl_pBar"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            />
+
+    <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+
+        <WebView
+                android:id="@+id/board_webviewctrl_web"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:visibility="invisible" />
+
+
+        <ProgressBar
+                android:id="@+id/board_prepage"
+                android:layout_width="36dip"
+                android:layout_height="36dip"
+                android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>
